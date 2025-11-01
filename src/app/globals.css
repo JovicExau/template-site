@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+/* Palette CEIPI vivante et moderne */
+:root {
+  --color-navy: #232946;
+  --color-violet: #6c63ff;
+  --color-yellow: #ffd803;
+  --color-mint: #3ddc97;
+  --color-white: #ffffff;
+  --color-gray-light: #f4f4f4;
+  --color-gray-medium: #b8c1ec;
+}
+
+body {
+  background: var(--color-white);
+  color: var(--color-navy);
+}
+
