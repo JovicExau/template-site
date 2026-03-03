@@ -19,7 +19,7 @@ export default function AboutSection() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="flex flex-col justify-center"
         >
-          <span className="mb-3 inline-block px-4 py-1 rounded-full bg-[var(--color-yellow)]/20 text-xs font-bold uppercase tracking-widest text-[var(--color-navy)]">À propos</span>
+          <span className="mb-3 inline-block px-4 py-1 rounded-full bg-[var(--color-cyan)]/20 text-xs font-bold uppercase tracking-widest text-[var(--color-navy)]">À propos</span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-6 text-[var(--color-navy)] drop-shadow">Qui sommes-nous&nbsp;?</h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -28,17 +28,17 @@ export default function AboutSection() {
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
             className="text-lg sm:text-xl md:text-2xl text-[var(--color-navy)] mb-8 max-w-2xl leading-relaxed"
           >
-            <span className="font-bold text-[var(--color-navy)]">CEIPI</span> est un cabinet d&apos;experts en solutions cloud et transformation digitale. Nous accompagnons les entreprises dans leur évolution technologique, en proposant des services innovants, sécurisés et adaptés à chaque besoin métier.
+            <span className="font-bold text-[var(--color-navy)]">Tech Template</span> est un cabinet d&apos;experts en solutions cloud et transformation digitale. Nous accompagnons les entreprises dans leur évolution technologique, en proposant des services innovants, sécurisés et adaptés à chaque besoin métier.
           </motion.p>
           <ul className="space-y-4 sm:space-y-5">
             {[{
               icon: <span className="w-12 h-12 flex items-center justify-center rounded-full bg-[var(--color-violet)]/10 text-[var(--color-violet)] shadow"><Users size={28} /></span>,
               text: "Équipe pluridisciplinaire et passionnée"
             }, {
-              icon: <span className="w-12 h-12 flex items-center justify-center rounded-full bg-[var(--color-yellow)]/10 text-[var(--color-yellow)] shadow"><Award size={28} /></span>,
+              icon: <span className="w-12 h-12 flex items-center justify-center rounded-full bg-[var(--color-emerald)]/10 text-[var(--color-emerald)] shadow"><Award size={28} /></span>,
               text: "Expertise certifiée et reconnue"
             }, {
-              icon: <span className="w-12 h-12 flex items-center justify-center rounded-full bg-[var(--color-mint)]/10 text-[var(--color-mint)] shadow"><ShieldCheck size={28} /></span>,
+              icon: <span className="w-12 h-12 flex items-center justify-center rounded-full bg-[var(--color-cyan)]/10 text-[var(--color-cyan)] shadow"><ShieldCheck size={28} /></span>,
               text: "Engagement pour la sécurité et la qualité"
             }].map((item, i) => (
               <motion.li
@@ -66,7 +66,7 @@ export default function AboutSection() {
           <div className="relative w-80 h-80 md:w-[420px] md:h-[420px] rounded-3xl overflow-hidden shadow-2xl border-4 border-[var(--color-gray-medium)]/10 transition-transform duration-300 hover:scale-105">
             <Image
               src="/images/person-working-html-computer.jpg"
-              alt="Équipe CEIPI"
+              alt="Équipe Tech Template"
               fill
               className="object-cover object-center"
               sizes="(max-width: 768px) 320px, 420px"
@@ -107,9 +107,9 @@ export default function AboutSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.7, delay: 0.2 + i * 0.1, ease: "easeOut" }}
-              className="bg-white rounded-2xl shadow-lg p-5 md:p-7 flex flex-col items-center text-center hover:shadow-2xl transition group border border-[var(--color-gray-medium)]/10 hover:border-[var(--color-yellow)]/40"
+              className="bg-white rounded-2xl shadow-lg p-5 md:p-7 flex flex-col items-center text-center hover:shadow-2xl transition group border border-[var(--color-gray-medium)]/10 hover:border-[var(--color-cyan)]/40"
             >
-              <span className="mb-2 w-12 h-12 md:w-14 md:h-14 flex items-center justify-center rounded-full bg-[var(--color-yellow)]/10 group-hover:bg-[var(--color-mint)]/10 transition">{item.icon}</span>
+              <span className="mb-2 w-12 h-12 md:w-14 md:h-14 flex items-center justify-center rounded-full bg-[var(--color-cyan)]/10 group-hover:bg-[var(--color-emerald)]/10 transition">{item.icon}</span>
               <span className="font-bold text-base sm:text-lg md:text-xl mb-1 md:mb-2 text-[var(--color-navy)]">{item.title}</span>
               <span className="text-[var(--color-navy)]/80 text-sm sm:text-base">{item.text}</span>
             </motion.div>

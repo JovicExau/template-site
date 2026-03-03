@@ -11,7 +11,7 @@ export default function Topbar() {
         <div className="flex flex-col md:flex-row flex-wrap items-center gap-2 md:gap-4 w-full md:w-auto justify-center md:justify-start">
           <span className="flex items-center gap-2">
             <Mail size={16} className="text-white" />
-            contact@cab-ceipi.com
+            contact@tech-template.com
           </span>
           <span className="hidden md:inline-block">| Afrique</span>
           <span className="hidden md:inline-block">

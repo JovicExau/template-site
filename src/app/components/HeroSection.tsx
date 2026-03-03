@@ -12,21 +12,21 @@ export default function HeroSection({ showHero = true }: { showHero?: boolean })
     >
       {/* Overlay image de fond avec opacité */}
       <div className="absolute inset-0">
-        <Image src="/images/background.jpg" alt="Fond CEIPI" fill className="object-cover object-center opacity-30" />
+        <Image src="/images/background.jpg" alt="Fond Tech Template" fill className="object-cover object-center opacity-30" />
       </div>
       <div className="relative z-10 max-w-7xl mx-auto px-6 py-12 md:py-20 grid md:grid-cols-2 gap-12 md:gap-20 items-center">
         <div>
           {/* Badge Cabinet */}
           <motion.div
-            className="inline-block mb-6 px-4 py-1 rounded-full bg-[var(--color-yellow)]/20 text-xs font-bold uppercase tracking-widest text-[var(--color-navy)] shadow"
+            className="inline-block mb-6 px-4 py-1 rounded-full bg-[var(--color-cyan)]/20 text-xs font-bold uppercase tracking-widest text-[var(--color-navy)] shadow"
             initial={{ opacity: 0, y: -20 }}
             animate={showHero ? { opacity: 1, y: 0 } : { opacity: 0, y: -20 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
           >
-            Cabinet CEIPI
+            Tech Template
           </motion.div>
           <motion.h1
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight drop-shadow-xl text-[var(--color-yellow)]"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight drop-shadow-xl text-[var(--color-cyan)]"
             initial={{ opacity: 0, y: -40 }}
             animate={showHero ? { opacity: 1, y: 0 } : { opacity: 0, y: -40 }}
             transition={{ duration: 0.7, ease: "easeOut" }}
@@ -43,7 +43,7 @@ export default function HeroSection({ showHero = true }: { showHero?: boolean })
             Des solutions innovantes, performantes et sécurisées pour accélérer la digitalisation des entreprises africaines.
           </motion.p>
           <motion.button
-            className="mt-8 flex items-center gap-2 bg-[var(--color-yellow)] text-[var(--color-navy)] px-6 py-3 rounded-full font-bold text-base md:text-lg shadow-xl transition-all duration-200 hover:scale-105 hover:bg-[var(--color-mint)] hover:text-[var(--color-navy)] border-2 border-transparent hover:border-[var(--color-yellow)] focus:outline-none"
+            className="mt-8 flex items-center gap-2 bg-[var(--color-cyan)] text-[var(--color-navy)] px-6 py-3 rounded-full font-bold text-base md:text-lg shadow-xl transition-all duration-200 hover:scale-105 hover:bg-[var(--color-emerald)] hover:text-[var(--color-navy)] border-2 border-transparent hover:border-[var(--color-cyan)] focus:outline-none"
             initial={{ opacity: 0, y: 30 }}
             animate={showHero ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
             transition={{ duration: 0.7, delay: 0.4, ease: "easeOut" }}

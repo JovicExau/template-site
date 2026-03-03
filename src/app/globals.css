@@ -1,14 +1,15 @@
 @import "tailwindcss";
 
-/* Palette CEIPI vivante et moderne */
+/* Palette Tech Template moderne et tech */
 :root {
-  --color-navy: #232946;
-  --color-violet: #6c63ff;
-  --color-yellow: #ffd803;
-  --color-mint: #3ddc97;
+  --color-navy: #0a0e27;
+  --color-violet: #6366f1;
+  --color-cyan: #06b6d4;
+  --color-emerald: #10b981;
   --color-white: #ffffff;
-  --color-gray-light: #f4f4f4;
-  --color-gray-medium: #b8c1ec;
+  --color-gray-light: #f8fafc;
+  --color-gray-medium: #94a3b8;
+  --color-accent: #f59e0b;
 }
 
 body {

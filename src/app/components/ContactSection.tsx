@@ -24,10 +24,10 @@ export default function ContactSection() {
           transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
           onSubmit={e => e.preventDefault()}
         >
-          <input type="text" placeholder="Nom" className="border border-[var(--color-yellow)] rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[var(--color-violet)]" required />
-          <input type="email" placeholder="Email" className="border border-[var(--color-yellow)] rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[var(--color-violet)]" required />
-          <textarea placeholder="Votre message" rows={5} className="border border-[var(--color-yellow)] rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[var(--color-violet)]" required />
-          <button type="submit" className="bg-[var(--color-yellow)] text-[var(--color-navy)] font-semibold rounded-full py-3 mt-2 hover:bg-[var(--color-mint)] hover:text-[var(--color-navy)] transition">Envoyer</button>
+          <input type="text" placeholder="Nom" className="border border-[var(--color-cyan)] rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[var(--color-violet)]" required />
+          <input type="email" placeholder="Email" className="border border-[var(--color-cyan)] rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[var(--color-violet)]" required />
+          <textarea placeholder="Votre message" rows={5} className="border border-[var(--color-cyan)] rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[var(--color-violet)]" required />
+          <button type="submit" className="bg-[var(--color-cyan)] text-[var(--color-navy)] font-semibold rounded-full py-3 mt-2 hover:bg-[var(--color-emerald)] hover:text-[var(--color-navy)] transition">Envoyer</button>
         </motion.form>
         {/* Coordonnées + carte */}
         <motion.div
@@ -39,7 +39,7 @@ export default function ContactSection() {
         >
           <div className="flex flex-col gap-4">
             <div className="flex items-center gap-3 text-[var(--color-navy)] font-semibold">
-              <Mail size={20} /> contact@cab-ceipi.com
+              <Mail size={20} /> contact@tech-template.com
             </div>
             <div className="flex items-center gap-3 text-[var(--color-navy)] font-semibold">
               <Phone size={20} /> +33 1 23 45 67 89
@@ -48,9 +48,9 @@ export default function ContactSection() {
               <MapPin size={20} /> 10 rue de l&apos;Innovation, Paris
             </div>
           </div>
-          <div className="w-full h-56 rounded-2xl overflow-hidden shadow-lg border border-[var(--color-yellow)]">
+          <div className="w-full h-56 rounded-2xl overflow-hidden shadow-lg border border-[var(--color-cyan)]">
             <iframe
-              title="CEIPI Map"
+              title="Tech Template Map"
               src="https://www.openstreetmap.org/export/embed.html?bbox=2.3522%2C48.8566%2C2.3622%2C48.8666&amp;layer=mapnik"
               className="w-full h-full border-0"
               loading="lazy"
